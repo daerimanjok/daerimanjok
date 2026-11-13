@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Declare only what the app actually calls (platform rule). -->
+    <!-- Pleos Vehicle SDK: Door -->
+    <uses-permission android:name="pleos.car.permission.CAR_DOORS" />
+    <!-- Pleos Vehicle SDK: Brake, Odometer, DrivingMode -->
+    <uses-permission android:name="pleos.car.permission.CAR_DRIVE" />
+    <!-- Pleos Vehicle SDK: fuel level, EV battery level -->
+    <uses-permission android:name="pleos.car.permission.CAR_ENERGY" />
+    <!-- Pleos Vehicle SDK: VIN (car model for the driver's control tips) -->
+    <uses-permission android:name="pleos.car.permission.CAR_INFO" />
+    <!-- Pleos NaviHelper: bookmarks, location, route state -->
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE" />
+    <!-- Pleos NaviHelper: requestRoute / cancelRoute -->
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE_SEARCH" />
+    <!-- AAOS Car API: vehicle speed. "dangerous" level, so it is requested at runtime while parked. -->
+    <uses-permission android:name="android.car.permission.CAR_SPEED" />
+    <!-- AAOS Car API: GEAR_SELECTION, PARKING_BRAKE_ON ("normal" level, no dialog) -->
+    <uses-permission android:name="android.car.permission.CAR_POWERTRAIN" />
+
+    <!-- Keeps trip recording alive while navigation is in front (see RecordingService). -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <!-- Parking-note notification when the app is behind navigation on arrival. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-feature android:name="android.hardware.type.automotive" android:required="true" />
+
+    <application
+        android:name=".DaeriApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:localeConfig="@xml/locales_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Daerimanjok">
+
+        <!-- Required for apps that stay usable while driving (driver-distraction rules). -->
+        <meta-data android:name="distractionOptimized" android:value="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|density|keyboardHidden"
+            android:exported="true">
+            <meta-data android:name="distractionOptimized" android:value="true" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".feature.daeri.RecordingService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Records vehicle signals (speed, odometer, doors) for the owner's trip report while the car is handed over to a designated driver." />
+        </service>
+    </application>
+
+</manifest>

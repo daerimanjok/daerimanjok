@@ -1,0 +1,200 @@
+<resources>
+    <string name="app_name">Daerimanjok</string>
+
+    <!-- Trip notifications -->
+    <string name="notif_channel">Daerimanjok trip</string>
+    <string name="notif_title">Daerimanjok: recording trip</string>
+    <string name="notif_text">Only the owner can see the report after the trip.</string>
+    <string name="notif_arrival_channel">Arrival</string>
+    <string name="notif_arrival_title">You\'ve arrived</string>
+    <string name="notif_arrival_text">Parking spot: %1$s</string>
+    <string name="notif_arrival_text_none">End the trip once the car is parked.</string>
+
+    <!-- Common -->
+    <string name="state_parked_done">Parked</string>
+    <string name="place_home">Home</string>
+    <string name="place_office">Work</string>
+    <string name="btn_prev">Back</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="unit_kmh">km/h</string>
+    <string name="unit_km">km</string>
+    <string name="unit_min">min</string>
+    <string name="unit_count"></string>
+    <string name="fmt_minutes">%1$d min</string>
+    <string name="fmt_hours_minutes">%1$d h %2$d min</string>
+    <string name="fmt_km">%1$s km</string>
+    <string name="fmt_m">%1$d m</string>
+    <string name="fmt_times">%1$d</string>
+    <string name="value_na">n/a</string>
+
+    <!-- S0 Setup -->
+    <string name="setup_bar">Get ready</string>
+    <string name="setup_headline">Before the driver\narrives</string>
+    <string name="setup_step_pin">Set PIN</string>
+    <string name="setup_step_pin_done">Set</string>
+    <string name="setup_step_pin_todo">4 digits</string>
+    <string name="setup_step_dest">Set destination</string>
+    <string name="setup_step_dest_todo">Pick one</string>
+    <string name="setup_step_note">Add parking spot</string>
+    <string name="setup_step_note_todo">Leave a note</string>
+    <string name="setup_pin_title">Set a PIN to confirm it\'s you.</string>
+    <string name="setup_pin_prompt">Enter 4 digits</string>
+    <string name="setup_pin_set">PIN set</string>
+    <string name="setup_pin_change">Enter 4 digits to change it</string>
+    <string name="setup_dest_title">Choose the destination.</string>
+    <string name="setup_dest_empty">No saved places in navigation</string>
+    <string name="setup_dest_empty_desc">Save Home in navigation and it shows up here.</string>
+    <string name="setup_dest_add">Save Home in navigation</string>
+    <string name="setup_note_title">Where should the car be parked?</string>
+    <string name="field_parking">Parking spot</string>
+    <string name="field_parking_hint">e.g. Basement level 4</string>
+    <string name="field_note">Requests for the driver (optional)</string>
+    <string name="field_note_hint">e.g. Navigation leads to the back gate; the main entrance faces the big road.</string>
+    <string name="field_contact">Emergency contact (optional)</string>
+    <string name="field_contact_hint">010-0000-0000</string>
+    <string name="setup_done">Done</string>
+    <string name="setup_parked_only">Setup is only possible while the car is parked</string>
+
+    <!-- S1 Call -->
+    <string name="call_bar">Call a driver</string>
+    <string name="call_headline">Is %1$s\ntoday\'s destination?</string>
+    <string name="call_parking">Park at</string>
+    <string name="call_start">Start safe hand-over</string>
+    <string name="call_change">Change destination</string>
+    <string name="call_panel_title">The safe hand-over will</string>
+    <string name="call_benefit_guide">Show the driver how to use this car.</string>
+    <string name="call_benefit_route">Guide the way to your destination.</string>
+    <string name="call_benefit_lock">Save the trip record automatically.</string>
+
+    <!-- S2 Briefing -->
+    <string name="brief_bar">Hand-over</string>
+    <string name="brief_headline">Here\'s how\nthis car works</string>
+    <string name="brief_dest">Destination</string>
+    <string name="brief_parking">Parking spot</string>
+    <string name="brief_model">Vehicle model</string>
+    <string name="car_model_grandeur">The New Grandeur (GN7)</string>
+    <string name="brief_status">Car right now</string>
+    <string name="status_fuel">Fuel</string>
+    <string name="status_gear">Gear</string>
+    <string name="status_parking_brake">Parking brake</string>
+    <string name="status_drive_mode">Drive mode</string>
+    <string name="gear_p">P (Park)</string>
+    <string name="gear_r">R (Reverse)</string>
+    <string name="gear_n">N (Neutral)</string>
+    <string name="gear_d">D (Drive)</string>
+    <string name="brake_on">On</string>
+    <string name="brake_off">Off</string>
+    <string name="mode_normal">Normal</string>
+    <string name="mode_eco">Eco</string>
+    <string name="mode_sport">Sport</string>
+    <string name="brief_photo">%1$s photo</string>
+    <string name="brief_start">Start trip</string>
+    <string name="tip_gear_tab">Gear</string>
+    <string name="tip_gear_where">Column shifter right of the wheel</string>
+    <string name="tip_gear_how">Twist up for D, down for R; press the end button for P</string>
+    <string name="tip_brake_tab">Parking brake</string>
+    <string name="tip_brake_where">P switch below the dashboard, left of the wheel</string>
+    <string name="tip_brake_how">Press it with your foot on the brake to release</string>
+    <string name="tip_seat_tab">Seat</string>
+    <string name="tip_seat_where">Switch on the side of the driver\'s seat</string>
+    <string name="tip_seat_how">Move the switch forward or back to set the backrest</string>
+
+    <!-- S3 Driving -->
+    <string name="drive_bar">Safe trip</string>
+    <string name="drive_title">Trip in progress</string>
+    <string name="drive_desc">Recording the route and speed</string>
+    <string name="drive_dest">Destination</string>
+    <string name="drive_eta_line">Arrive %1$s · %2$s left</string>
+    <string name="drive_waiting">Distance left appears once navigation starts</string>
+    <string name="label_arrival">Arrive</string>
+    <string name="label_remaining_dist">Distance</string>
+    <string name="label_remaining_time">Time</string>
+    <string name="cd_speed_limit">Speed limit %1$d</string>
+    <string name="drive_arrived">I\'ve arrived</string>
+
+    <!-- S4 Return -->
+    <string name="return_bar">Return the car</string>
+    <string name="return_chip">You\'ve arrived</string>
+    <string name="return_label">Parking request</string>
+    <string name="return_no_spot">No parking spot was left</string>
+    <string name="return_panel_title">Parked?</string>
+    <string name="label_duration">Trip time</string>
+    <string name="label_distance">Distance</string>
+    <string name="return_end">End trip</string>
+    <string name="done_title">Trip complete</string>
+    <string name="done_thanks">Thank you for driving today</string>
+
+    <!-- S5 Report -->
+    <string name="report_bar">Trip report</string>
+    <string name="lock_headline">The report from\n%1$s is here</string>
+    <string name="lock_wrong">Wrong PIN. Try again</string>
+    <string name="day_today">today</string>
+    <string name="day_last_night">last night</string>
+    <string name="day_date">%1$s</string>
+    <string name="report_title_good">Home safe %1$s, thanks to your driver.</string>
+    <string name="tab_summary">Summary</string>
+    <string name="tab_speed">Speed</string>
+    <string name="stat_distance">Distance</string>
+    <string name="stat_duration">Trip time</string>
+    <string name="stat_top">Top speed</string>
+    <string name="stat_attention">Driving Alerts</string>
+    <string name="attention_breakdown">Speeding %1$d · Hard accel. %2$d · Hard braking %3$d</string>
+    <string name="panel_route">Route</string>
+    <string name="route_badge_ok">Kept to the speed limits</string>
+    <string name="route_empty">No route recorded</string>
+    <string name="panel_timeline">Timeline</string>
+    <string name="tl_start">Start</string>
+    <string name="tl_arrive">Arrived · %1$s</string>
+    <string name="tl_parked">Parked at %1$s</string>
+    <string name="tl_door">Driver door opened</string>
+    <string name="tl_speed">%1$d km/h</string>
+    <string name="tl_speed_limit">%1$d km/h · limit %2$d</string>
+    <string name="btn_lock">Lock</string>
+    <string name="btn_delete">Delete record</string>
+    <string name="delete_title">Delete this trip record?</string>
+    <string name="delete_desc">This can\'t be undone. Your PIN and destination stay set up.</string>
+    <string name="delete_confirm">Delete</string>
+    <string name="speed_chart_title">Speed over time</string>
+    <string name="legend_speed">Speed</string>
+    <string name="legend_limit">Limit</string>
+    <string name="speed_max_marker">Top %1$d km/h</string>
+    <string name="speed_empty">No speed recorded</string>
+    <string name="stat_compliance">Within limit</string>
+    <string name="stat_avg">Average</string>
+    <string name="attention_none">None at all</string>
+    <string name="attention_some">%1$d times</string>
+    <string name="label_overspeed">Speeding</string>
+    <string name="label_hard_accel">Hard acceleration</string>
+    <string name="label_hard_brake">Hard braking</string>
+    <string name="speed_summary_good">Your driver kept to the limits\nand drove smoothly.</string>
+
+    <!-- Shared components -->
+    <string name="cd_back">Back</string>
+    <string name="cd_settings">Settings</string>
+    <string name="state_parked">Parked</string>
+    <string name="state_driving">Driving</string>
+    <string name="demo_badge">Demo mode</string>
+    <string name="key_clear">Clear</string>
+    <string name="key_delete">Delete</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_theme">Screen theme</string>
+    <string name="settings_theme_desc">Follows the car\'s day/night setting unless you pick one.</string>
+    <string name="theme_system">Follow car</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_light">Light</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_demo">Demo mode</string>
+    <string name="settings_demo_desc">Replays a recorded drive so the trip screens and report can be shown on the emulator. Turn it off in a real car.</string>
+    <string name="settings_reset">Start over</string>
+    <string name="settings_reset_desc">Erases the owner PIN, destination, parking note and trip record, and starts again from setup. Theme and demo mode stay.</string>
+    <string name="settings_reset_button">Reset</string>
+    <string name="settings_reset_confirm_title">Start over from the beginning?</string>
+    <string name="settings_reset_confirm_desc">The owner PIN, destination, parking note and trip record will be erased. This can\'t be undone.</string>
+    <string name="settings_parked_only">Settings can only be changed while the car is parked.</string>
+    <string name="demo_parking_spot">Basement level 4</string>
+    <string name="cd_edit_place">Edit place in navigation</string>
+</resources>

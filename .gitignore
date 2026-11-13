@@ -1,0 +1,29 @@
+# Build output
+.gradle/
+build/
+*/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local machine config
+local.properties
+.idea/
+*.iml
+.DS_Store
+
+# Signing secrets — never commit
+*.jks
+*.keystore
+keystore.properties
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Platform/contest material — never commit
+*.fig
+handover-official/
+
+# Owner's-manual control pictures: copyrighted, kept local only (the app shows a placeholder without them)
+app/src/main/res/drawable-nodpi/tip_*.jpg
